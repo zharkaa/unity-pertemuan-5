@@ -1,0 +1,28 @@
+<?php
+// Your data to be parsed
+$data = '{"name": "John Doe", "age": 30, "city": "New York"}';
+
+// multiple data
+$data = '[
+    {"name": "John Doe", "age": 30, "city": "New York"},
+    {"name": "Jane Doe", "age": 25, "city": "Los Angeles"}
+]';
+
+// access the unparsed second data
+// echo "Unparsed Data: " . $data[1] . "<br>";
+
+echo "var dump the parsed data: <br>";
+var_dump(json_decode($data, true));
+
+echo "<br><br>var dump the unparsed data: <br>";
+var_dump($data);
+
+// Parse the data into an associative array
+
+// display the unparsed data
+
+// Display the parsed data
+// echo "Name: " . $parsedData['name'] . "<br>";
+// echo "Age: " . $parsedData['age'] . "<br>";
+// echo "City: " . $parsedData['city'] . "<br>";
+
